@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TODOLIST Login</title>
+</head>
+<body>
+    <h1 class="paddingLogin">TODOLIST</h1>
+
+<div class="TestCustom">
+    <div style="margin-bottom: 40px;">
+        <div class="flexProfileNDate">
+
+            <img class="imageProfile" src="sutokkinggu.jpg" />
+            <div class="flexForNDate">
+                <div class="flexForSpaceBetween">
+                    <p class="peopleName">Sheehan Andya</p>
+                    <p id="datetime">4 Februari 2025</p>
+                </div>
+                <div class="flexForSpaceBetween">
+                    <p>Software Engineer</p>
+                    <p id="localtime"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <form id="myform">
+        
+        <div class="flexProfileNDate2nd">
+            
+            <div class="flexForFlexDirectionC">
+                <label>Choose Priority</label>
+                <select id="prioritySelect" name="select" style="background-color: transparent;">
+                    <option style="background-color: greenyellow;">Low</option>
+                    <option style="background-color: orange;">Medium</option>
+                    <option style="background-color: red;">High</option>
+                </select>
+            </div>
+            <div class="flexForFlexDirectionC">
+                <label>Date</label>
+                <input id="dateInput1" type="date" name="date">
+            </div>
+        </div>
+
+        <div class="flexForFlexDirectionTask">
+            <label>Task</label>
+            <textarea name="textarea" placeholder="The things you need to work on..."></textarea>
+            <div class="flexForSpaceBetween customgap">
+                <button id="ResetButton" class="resetbutton" type="button">Reset</button>
+                <input class="submitbutton" type="submit" value="Submit">
+            </div>
+        </div>
+
+    </form>
+
+    <div class="flextodolist">
+
+        <div class="gappes">
+            <button id="task" class="buttontodo">Task</button>
+            <button id="done" class="buttontodo">Done</button>
+        </div>
+            <a href="" class="hypertexttodo">Clear All Data</a>
+
+               
+    </div>
+    
+    <div class="todoListStyle">
+        <ul id="todoList"></ul>
+    </div> 
+
+    <div class="sortbuttonclass">
+        
+        <div class="sortbuttonclass1">
+            <button id="sortdateby" class="sortbutton">Sort By Date</button>
+            <button id="sortpriorityby" class="sortbutton">Sort By Priority</button>
+        </div>
+        <div class="sortbuttonclass1 descriptionClass">
+            <p>🔴 High</p>
+            <p>🟠 Medium</p>
+            <p>🟢 Low</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<script src="JSScript.js"></script>
+</body>
+</html>

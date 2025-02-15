@@ -1,0 +1,15 @@
+1. bisa menulis dan menambahkan agenda to do list
+2. bisa menampilkan daftar to do list yang harus dikerjakan dalam hari tertentu
+3. bisa mencoret pekerjaan yang sudah selesai dilakukan dengan mengclick *checkbox*
+4. bisa menampilkan pekerjaan yang telah selesai dilakukan dalam list kolom *done*
+5. bisa menghapus seluruh to do list yang telah dibuat
+
+detail detail komponen : 
+profile = ada profile yang menunjukkan informasi nama dan jabatan
+time = menampilkan informasi waktu berupa hari dan tanggal
+text area = untuk menuliskan tugas 
+level priority = level prioritas low, medium, high
+button submit = menampilkan informasi tugas yang sudah dituliskan di text area
+to do = memuat tabel to do list, berisikan informasi tugas yang akan/sedang dikerjakan
+done = memuat list to do yang sudah di selesaikan
+button delete = menghapus seluruh list to do yang telah dibuat
