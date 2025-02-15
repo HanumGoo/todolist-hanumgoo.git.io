@@ -17,9 +17,10 @@ let textareaForm;
 
 const now = new Date();
 const day = now.getDate();
-const month = now.toLocaleString("en-GB", { month: "long" } );
+const month = now.toLocaleString("en-GB", { month: "short" } );
+const monthnew = now.getMonth() + 1;
 const year = now.getFullYear();
-dateTime.innerHTML = `${day} ${month} ${year}`;
+dateTime.innerHTML = `${day}/0${monthnew}/${year}`;
 localTime.innerHTML = now.toLocaleTimeString();
 
 const dateInput1 = document.getElementById("dateInput1");

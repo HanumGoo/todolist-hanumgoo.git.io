@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Londrina+Solid:wght@100;300;400;900&display=swap');
 
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     * {
         font-size: 12px;
     }
     input {
         font-size: 12px;
+    }
+
+    .descriptionClass {
+        flex-direction: column;
+    }
+
+    .flexForSpaceBetween1 {
+        justify-content: none;
+        flex-direction:column;
     }
 }
 
@@ -34,6 +43,8 @@ body {
 form {
     margin-bottom: 60px;
 }
+
+
 
 .fade-checkbox {
     transition: opacity 0.5s ease-in-out;
@@ -106,7 +117,13 @@ form {
 .sortbuttonclass1 {
     display: flex;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
+}
+
+.sortbuttonclass2 {
+    display: flex;
+    gap: 0px;
+    margin-top: 0px;
 }
 
 .sortbutton {
@@ -239,6 +256,12 @@ form {
 .flexForSpaceBetween {
     display: flex;
     justify-content: space-between;
+}
+
+.flexForSpaceBetween1 {
+    display: flex;
+    justify-content: none;
+    flex-direction: column;
 }
 
 .buttoncustom {
